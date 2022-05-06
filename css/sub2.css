@@ -1,0 +1,34 @@
+/* sub2.css */
+.spot{background: url(../images/careers_visual_img.jpg) no-repeat 50% 0; color:#fff;}
+
+/* container */
+/* spot */
+.spot_inner > h2{margin-bottom: 10px; font-size: 50px; font-weight: 600;}
+.spot_inner > p{font-size: 16px; color:#eee;}
+.spot_inner > p.path{padding-top:80px ; text-align: right; font-size: 14px; color: #ccc;}
+
+/* content */
+p.info_txt{text-align: right; margin-bottom: 10px;}
+table.job{width: 100%; margin-bottom: 60px;}
+.job thead th{
+	height: 60px; border: 1px solid #ccc; border-top: 1px solid #000;
+	background-color: #f3f3f3; text-align: center; font-size: 18px;
+}
+.job thead th:first-of-type{width: 120px; border-left: none;} /* th의 width를 잡아주면 아래의 td의 width가 자연스럽게 잡힌다. */
+.job thead th:nth-of-type(2){width: 640px;} /* th의 width를 잡아주면 아래의 td의 width가 자연스럽게 잡힌다. */
+.job thead th:last-of-type{width: 380px; border-right: none;} /* th의 width를 잡아주면 아래의 td의 width가 자연스럽게 잡힌다. */
+
+.job tbody td{height: 60px; border: 1px solid #ccc; text-align: center; border-top:none; font-size: 16px;}
+/* border가 겹치니깐 border-top만 없애준다. */ 
+.job tbody td:first-of-type{border-left: none;}
+.job tbody td:last-of-type{border-left: none;}
+.job tbody tr:last-of-type td{border-bottom: 1px solid #000;}
+
+div.faq{width: 100%; padding: 20px 30px; box-sizing: border-box; border: 1px solid #ccc;} /* width:100%는 #content 크기 그대로 */
+div.faq:after{content: ""; display: block; clear: both;}
+div.faq > p{float: left; font-size: 16px; line-height: 47px;}
+div.faq > a{
+	float: right; display: block; width: 160px; height: 45px;
+	background: #043285 url(../images/btn_arrow_ico_w.png) no-repeat 90% 50%;
+	color: #fff; font-size: 16px; text-align: center; line-height: 45px;
+}

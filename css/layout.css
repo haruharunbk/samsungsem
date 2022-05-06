@@ -1,0 +1,79 @@
+/* layout.css */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+/* common */
+body{font-size: 14px; font-family: "Noto sans", "Noto Sans KR", Helvetica, sans-serif; color: #333;}
+a{text-decoration: none; color: #333;}
+a:hover{text-decoration: none; color: #333;}
+
+/* layout */
+/* 
+	#wrap{}
+		#header{}
+			.header_wrap{}
+				.header_inner{}
+		.main_visual{}
+		#container{}
+			.content1{}
+			.content2{}
+			.content3{}
+		.sitemap
+		#footer{}
+			.footer_inner{} 		
+*/
+#wrap{width: 100%;}
+	#header{position:relative; z-index: 40; width: 100%; height: 70px;} /* nav가 main_visual을 가려줘야하니깐 z-index값을 설정해줘야한다. */
+		.header_wrap{position: absolute; left: 0; top: 0; width: 100%; height: 70px; background-color: #f3f3f3;} 
+		/* 초기의 높이는 header랑 똑같지만 hover됐을때  높이가 안의 content에 따라 늘었다 줄었다 한다. */
+			.header_inner{position:relative; width: 100%; background-color: #fff; border-bottom: 1px solid #ccc;}
+			/* inner를 기준으로 gnb의 하위 ul이 position absolute의 기준을 잡아주려고 해준다. */
+	.main_visual{position: relative; z-index: 30; width: 100%;}
+	/* header의 z-index가 main_visual을 가리니깐 더 낮게 잡아줘야하고 z-index를 사용하려면 position이 있어야한다. */
+	#container{width: 100%;}
+		.content1{width: 1142px; margin: 0 auto 70px; padding:90px 0 120px;}
+		.content2{width: 1105px; margin: 0 auto 126px; padding: 40px 112px 60px; background-color: #fff;}
+		.content2:after{content: ""; display: block; clear: both;}
+		.content3{width: 1142px; margin: 0 auto 120px;}
+		.content3:after{content: ""; display: block; clear: both;}
+
+		.spot{width: 100%; height: 321px; background: url(../images/faq_visual_img.jpg) no-repeat 50% 0; color:#fff;}
+		.spot_inner{width: 1140px; margin: 0 auto; padding-top: 95px;}
+		#content{width: 1140px; margin: 0 auto; padding: 100px 0 160px; }
+	.sitemap{width: 100%; background-color: #f3f3f3;}
+	#footer{width: 100%; height: 185px; background-color:#474a4f;}
+		.footer_inner{width: 1142px; margin: 0 auto; padding-top: 20px;}
+
+
+
+		
+		
+		
+/* sub1_layout */
+/* 
+	#wrap{}
+		#header{}
+			.header_wrap{}
+				.header_inner{}
+		#container{}
+			.spot{}
+				.spot_inner{}
+			#content()
+		#footer{}
+			.footer_inner{} 		
+*/
+
+/* sub2_layout */
+/* 
+	#wrap{}
+		#header{}
+			.header_wrap{}
+				.header_inner{}
+		#container{}
+			.spot{}
+				.spot_inner{}
+			#content()
+		#footer{}
+			.footer_inner{} 		
+*/
